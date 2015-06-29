@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>WiFun</title>
+		<meta name="viewport" content="width=320.1, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="/css/style.css">
+		<meta data-rid="0" data-rtype="search" />
+	</head>
+
+	<body>
+		<div class="back">
+			<div>
+				<a class="backi" href="javascript:void(0);"></a>
+			</div>
+			<div>
+				<a class="logo" href="/html/main.html"></a>
+			</div>
+			<!--<div>
+				<i class="historyi"></i>
+			</div>-->
+		</div>
+		<div class="search" id="resultList">
+		</div>
+		<div id="empty_box" class="empty" style="display: none;">
+			<div>
+				<i class="iwarn"></i>
+				<span class="mgl10 f15">Sorry, we did not find "<em id="empty_keywords"></em>" related videos.</span>
+			</div>
+		</div>
+		<!--<div class="float">
+			<div class="img">
+				<img src="../pic/15.png">
+			</div>
+			<div class="info">
+				<p>
+					<em class="m">On the APP to see</em>
+					</br>
+					More clear ! More fluid !
+				</p>
+			</div>
+			<div class="down" id="appDownloadBtn">Download</div>
+		</div>-->
+		
+		<!-- 定义模板 -->
+		<div id="result_item_template" style="display: none;">
+			<div class="box">
+				<div class="img">
+					<img sid="poster">
+					<div class="blackbg">
+						<span><em sid="playLength"></em></span>
+					</div>
+				</div>
+				<div class="content">
+					<h1 sid="title"></h1>
+					<p sid="intro"></p>
+					<!--<span><i class="firei2"></i>1,962</span>-->
+				</div>
+			</div>
+		</div>
+		
+		<!-- 弹出框 -->
+		<div id="alert_box" class="loadbg dn">
+			<div class="popup">
+				<div class="popupc">
+					<div>
+						<p sid="message"></p>
+					</div>	
+				</div>
+
+				<div class="popupbtn" sid="buttonBox">
+					<input type="button" sid="okBtn" value="OK">
+					<input type="button" sid="cancelBtn" value="Cancel">
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="/js/util/jquery.js"></script>
+		<script type="text/javascript" src="/js/util/my-ajax.js" ></script>
+		<script type="text/javascript" src="/js/util/checkstatus.js"></script>
+		<script type="text/javascript" src="/js/obj/alert-box.js" ></script>
+		<script type="text/javascript" src="/js/search.js" ></script>
+	</body>
+
+</html>
